@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">WishlightWizard</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#form">Monitor Product</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Welcome to WishlightWizard</h1>
+        <p>Track your favorite products and get notified when they hit your desired price!</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            We help users monitor product prices and notify them when their desired price is met.
+            Save time and money with our easy-to-use service.
+        </p>
+    </section>
+
+    <section id="form" class="form-section">
+        <h2>Monitor a Product</h2>
+        <form id="priceMonitorForm">
+            <label for="productLink">Product Link:</label>
+            <input type="url" id="productLink" placeholder="Enter product link" required>
+            
+            <label for="desiredPrice">Desired Price:</label>
+            <input type="number" id="desiredPrice" placeholder="Enter desired price" required>
+
+            <button type="submit">Monitor Price</button>
+        </form>
+        <div id="notification" class="notification"></div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@WishlightWizard.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 WishlightWizard. All rights reserved.</p>
+    </footer>
+</body>
+</html>
