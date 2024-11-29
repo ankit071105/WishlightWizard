@@ -26,13 +26,13 @@ document.getElementById("priceMonitorForm").addEventListener("submit", function 
         const productName = data.product;
 
         if (currentPrice <= desiredPrice) {
-            notification.innerHTML = `Good news! "${productName}" is now available for $${currentPrice.toFixed(
+            notification.innerHTML = `Good news! "${productName}" is now available for ₹${currentPrice.toFixed(
                 2
             )}. Go grab it!`;
         } else {
-            notification.innerHTML = `"${productName}" is currently $${currentPrice.toFixed(
+            notification.innerHTML = `"${productName}" is currently ₹${currentPrice.toFixed(
                 2
-            )}. We'll notify you when it drops to $${desiredPrice}.`;
+            )}. We'll notify you when it drops to ₹${desiredPrice}.`;
         }
     });
 });
